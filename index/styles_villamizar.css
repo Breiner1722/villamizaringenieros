@@ -1,0 +1,240 @@
+/* ==============================
+Reset General
+============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    }
+    
+    /* ==============================
+    Header y Navegación
+    ============================== */
+    header {
+    background: linear-gradient(135deg, #0E5A97, #5A7D9D);
+    color: white;
+    padding: 1em 0;
+    }
+    
+    header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    }
+    
+    .logo img {
+    display: block;
+    height: 100px;
+    max-width: 100%;
+    object-fit: contain;
+    }
+    
+    /* ==============================
+    Menú de Navegación
+    ============================== */
+    ul.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    }
+    
+    ul.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background 0.3s ease;
+    font-weight: bold;
+    }
+    
+    ul.menu li:hover {
+    background: #1D4F7A;
+    border-radius: 5px;
+    }
+    
+    /* ==============================
+    Sección Sobre Nosotros
+    ============================== */
+    .sobre-nosotros {
+    padding: 3em 5%;
+    text-align: center;
+    }
+    
+    .sobre-nosotros h2 {
+    font-size: 2.5em;
+    color: #003366;
+    font-weight: bold;
+    margin-bottom: 10px;
+    }
+    
+    .sobre-nosotros p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    margin: auto;
+    }
+    
+    /* ==============================
+    Visión y Misión
+    ============================== */
+    .vision-mision {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 3em 5%;
+    }
+    
+    .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    }
+    
+    .card {
+    background-color: white;
+    padding: 2em;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    border-radius: 10px;
+    }
+    
+    .card h3 {
+    color: #0E5A97;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    }
+    
+    /* ==============================
+    Footer
+    ============================== */
+    footer {
+    background: linear-gradient(135deg, #003366, #555555);
+    color: white;
+    padding: 1.5em;
+    text-align: center;
+    }
+    
+    /* ==============================
+    Estilos para el perfil
+    ============================== */
+    .perfil {
+    text-align: center;
+    padding: 3em 5%;
+    }
+    
+    .perfil h2 {
+    font-size: 2.5em;
+    color: #003366;
+    margin-bottom: 10px;
+    }
+    
+    .foto-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #003366;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+    }
+    
+    .foto-perfil:hover {
+    transform: scale(1.05);
+    }
+    
+    .perfil p {
+    font-size: 1.3em;
+    color: #555;
+    }
+    
+    /* ==============================
+    Estilos para la sección de roles
+    ============================== */
+    .roles {
+    padding: 3em 5%;
+    background-color: #eef3f7;
+    text-align: center;
+    }
+    
+    .roles h2 {
+    font-size: 2.2em;
+    color: #003366;
+    margin-bottom: 20px;
+    font-weight: bold;
+    }
+    
+    .roles ul {
+    list-style: none;
+    padding: 0;
+    }
+    
+    .roles li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+    font-weight: bold;
+    }
+    
+    /* ==============================
+    Estilos para la frase destacada
+    ============================== */
+    .frase-destacada {
+    font-size: 1.8em; /* Agrandar la frase */
+    font-weight: bold; /* Negrita */
+    font-style: italic; /* Itálica */
+    color: #0E5A97; /* Color acorde con el diseño */
+    text-align: center; /* Centrar el texto */
+    
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    
+    width: 100%; /* Que ocupe todo el ancho disponible */
+    height: 20vh; /* Ajusta según lo que necesites */
+    
+    margin: 0 auto; /* Centrado automático */
+    padding: 20px;
+    }
+    /* Línea decorativa opcional */
+    .frase-destacada::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #0E5A97;
+    margin: 10px auto 0;
+    }
+    
+    /* ==============================
+    Responsivo
+    ============================== */
+    @media (max-width: 768px) {
+    .perfil h2 {
+    font-size: 2em;
+    }
+    
+    .foto-perfil {
+    width: 150px;
+    height: 150px;
+    }
+    
+    .perfil p,
+    .roles li {
+    font-size: 1em;
+    }
+    
+    .cards-container {
+    flex-direction: column;
+    align-items: center;
+    }
+    }

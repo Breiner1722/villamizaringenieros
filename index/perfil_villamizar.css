@@ -1,0 +1,74 @@
+/* ==============================
+   Estilos para el perfil
+   ============================== */
+
+   .perfil {
+    text-align: center;
+    padding: 2em 5%;
+}
+
+.perfil h2 {
+    font-size: 2.5em;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #003366;
+    margin: 20px 0;
+}
+
+.perfil p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* ==============================
+   Estilos para la sección de roles
+   ============================== */
+
+.roles {
+    padding: 3em 5%;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.roles h2 {
+    font-size: 2.2em;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.roles ul {
+    list-style: none;
+    padding: 0;
+}
+
+.roles li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* ==============================
+   Responsivo
+   ============================== */
+@media (max-width: 768px) {
+    .perfil h2 {
+        font-size: 2em;
+    }
+
+    .foto-perfil {
+        width: 150px;
+        height: 150px;
+    }
+
+    .perfil p,
+    .roles li {
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,146 @@
+/* ==============================
+   Estilos Formulario de Contacto
+   ============================== */
+
+   .contenedor_contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3em 5%;
+}
+
+.form_contacto {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    padding: 2em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.form_contacto h2 {
+    text-align: center;
+    color: #0E5A97;
+    margin-bottom: 1em;
+}
+
+.form_contacto label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+}
+
+.form_contacto input,
+.form_contacto textarea {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+}
+
+.form_contacto button {
+    width: 100%;
+    background-color: #0E5A97;
+    color: white;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form_contacto button:hover {
+    background-color: #003366;
+}
+
+/* ==============================
+   Estilos del formulario emergente
+   ============================== */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.form-popup {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 90%;
+    position: relative;
+}
+
+.form-popup h2 {
+    margin-bottom: 15px;
+}
+
+.form-popup label {
+    display: block;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.form-popup input, 
+.form-popup textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-popup button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form-popup button:hover {
+    background: #0056b3;
+}
+
+/* ==============================
+   Estilos para botones de apertura
+   ============================== */
+
+.openContactForm {
+    background-color: #0E5A97;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.openContactForm:hover {
+    background-color: #003366;
+}
+.hidden {
+    display: none;
+}
+.active {
+    display: flex; /* o block, según necesites */
+}
+
